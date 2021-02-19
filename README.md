@@ -42,6 +42,7 @@ Please refer to the complete notebook for a full analysis of the data and intera
 ....├── column_names.MD<br>
 ....├── feature_scale.jpg<br>
 ....├── kc_house_data.csv<br>
+....├── Chloropleth.jpg
 ....└── SeattleWashington13738.jpg<br>
 ├── team notebooks<br>
 ....├── Christos Messy Notebook.ipynb<br>
