@@ -1,66 +1,56 @@
-# Phase 2 Project
+# Overview<br>
 
-Another module down--you're almost half way there!
+We started our project by determining a valid stakeholder and deciding what are the values they are looking for, how do those show up in our data and which one could be strongly correlated to our target: price. We were able to find strong correlations between things like bathrooms, grades and square feet of living space. These were some of the key initials features we decided to use in our model. After several iterations of the model we had a good idea of what would generate a high score and were able to look beyond that to create our own scale based on our parameter estimates. The parameter estimates are listed below:
+ 
+Low number of bathrooms<br>
+Available lot space for expansions <br>
+Finishing unfinished basements<br>
+High lot value but low building value for potential teardown <br>
+Lower square footage compared to neighbors to stay competitive<br>
+ 
+This allowed us to come up with our own value scale to model what we believed would make the ideal house to flip, something that would appeal to our stakeholders. Using these tools and our folium maps you can see in our slides we generated three sample properties as part of our business proposition.
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-2-project-campus/master/halfway-there.gif)
+# Business Understanding<br>
 
-All that remains in Phase 2 is to put our newfound data science skills to use with a large project! This project should take 20 to 30 hours to complete.
+Our main goal is to be able to provide tools to our partners in HGTV and Discovery that allow them to evaluate houses in King County. We would like to propose to them that they choose Seattle as their next house flipping destination for a show like Property Brothers. Seattle is uniquely suited for this because it has been growing at an extremely high rate over the last few years due to the tech boom. This brings in lots of wealthy buyers, people looking to buy properties and settle here. Luckily Seattle also has a very old history providing many houses that were built just after the turn of the century that need to be updated, renovated and would be ideal for house flipping. We think with the tools provided, our parameter estimates, our folium map, and linear regression model you will be easily able to find the kinds of properties needed. 
 
-## Project Overview
+# The Data
 
-For this project, you will use regression modeling to analyze house sales in a northwestern county.
+Our data is sourced from the King County Department of Assessment, which covers the Greater Seattle area. As a local government organization the data collected and distributed by the department is as trustworthy as data can be. Seattle GeoData is our second source, which provided the necessary locale information to create our visualizations
 
-### The Data
+![alt text](data/feature_scale.jpg)
+Property grading scale based on inferred features
 
-This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this repo. The description of the column names can be found in `column_names.md` in the same folder. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions about what the data means.
+![alt text](data/Screenshot (244)-Pano.jpg)
+Flipping oppurtunity by zipcode, using the grading scale above
 
-It is up to you to decide what data from this dataset to use and how to use it. If you are feeling overwhelmed or behind, we recommend you ignore some or all of the following features:
+# Next Steps
 
-* date
-* view
-* sqft_above
-* sqft_basement
-* yr_renovated
-* zipcode
-* lat
-* long
-* sqft_living15
-* sqft_lot15
+Improve the value scale from a binary grading system to a continuous one.<br>
+Fix folium resizing map markers if folium regains that functionality.<br>
+Find additional data relating to nearby amenities.<br>
+Find recent data to add the element of time.<br>
+Find more precise data, such as if basements are finished or not.<br>
 
-### Business Problem
+# For More Information
 
-It is up to you to define a stakeholder and business problem appropriate to this dataset.
+Please refer to the complete notebook for a full analysis of the data and interactive maps, or our presentation for a quicker overview.
+ 
+# Repository Structure
 
-If you are struggling to define a stakeholder, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
-
-## Deliverables
-
-There are three deliverables for this project:
-
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
-
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
-
-### Key Points
-
-* **Your deliverables should explicitly address each step of the data science process.** Refer to [the Data Science Process lesson](https://github.com/learn-co-curriculum/dsc-data-science-processes) from Topic 19 for more information about process models you can use.
-
-* **Your Jupyter Notebook should demonstrate an iterative approach to modeling.** This means that you begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs discussing your final model - this should include interpreting at least 3 important parameter estimates or statistics.
-
-* **Based on the results of your models, your notebook and presentation should discuss at least two features that have strong relationships with housing prices.**
-
-## Getting Started
-
-Start on this project by forking and cloning [this project repository](https://github.com/learn-co-curriculum/dsc-phase-2-project) to get a local copy of the dataset.
-
-We recommend structuring your project repository similar to the structure in [the Phase 1 Project Template](https://github.com/learn-co-curriculum/dsc-project-template). You can do this either by creating a new fork of that repository to work in or by building a new repository from scratch that mimics that structure.
-
-## Project Submission and Review
-
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+├── data<br>
+....├── column_names.MD<br>
+....├── feature_scale.jpg<br>
+....├── kc_house_data.csv<br>
+....└── SeattleWashington13738.jpg<br>
+├── team notebooks<br>
+....├── Christos Messy Notebook.ipynb<br>
+....├── Christos_eda_project_2.ipynb<br>
+....├── marcos_eda_project_2.ipynb<br>
+....├── Phase 2 project Rachel.ipynb<br>
+....└── student.ipynb<br>
+├── Final_notebook.ipynb<br>
+├── CONTRIBUTING.md<br>
+├── halfway_there.gif<br>
+├── LICENSE.md<br>
+└── README.md<br>
