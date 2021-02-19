@@ -21,7 +21,7 @@ Our data is sourced from the King County Department of Assessment, which covers 
 ![alt text](data/feature_scale.jpg)
 Property grading scale based on inferred features
 
-![alt text](data/Screenshot (244)-Pano.jpg)
+![alt text](data/Screenshot (250).png)
 Flipping oppurtunity by zipcode, using the grading scale above
 
 # Next Steps
